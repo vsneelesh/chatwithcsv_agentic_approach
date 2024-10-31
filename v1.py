@@ -13,6 +13,8 @@ import matplotlib.pyplot as plt
 import pyperclip
 import zipfile
 
+pandasai.clear_cache()
+
 # Page configuration
 st.set_page_config(
     page_title="Data Analysis Assistant | CSV Analysis Made Easy",

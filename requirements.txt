@@ -1,0 +1,10 @@
+langchain
+streamlit
+openai
+pandasai
+transformers
+python-dotenv
+langchain_openai
+pandasai[langchain]
+langchain_groq
+pyperclip
