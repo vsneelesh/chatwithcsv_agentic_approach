@@ -416,7 +416,8 @@ load_dotenv()
 model = ChatGroq(
     model="llama-3.2-90b-vision-preview",
     temperature=0.1,
-    api_key=os.environ["GROQ_API_KEY"]
+    # api_key=os.environ["GROQ_API_KEY"]
+    api_key = st.secrets["GROQ_API_KEY"]
 )
 
 def extract_json_from_response(response):
