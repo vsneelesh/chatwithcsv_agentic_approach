@@ -420,6 +420,8 @@ model = ChatGroq(
     api_key = st.secrets["GROQ_API_KEY"]
 )
 
+file_path="csv_logo.jpeg"
+
 def extract_json_from_response(response):
     """Extract JSON from LLM response, handling different response formats."""
     response_text = response.content if hasattr(response, 'content') else str(response)
