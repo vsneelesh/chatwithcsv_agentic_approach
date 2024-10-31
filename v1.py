@@ -420,7 +420,6 @@ model = ChatGroq(
     api_key = st.secrets["GROQ_API_KEY"]
 )
 
-file_path="csv_logo.jpeg"
 
 def extract_json_from_response(response):
     """Extract JSON from LLM response, handling different response formats."""
@@ -608,9 +607,12 @@ def export_chat_history(chat_history):
     except Exception as e:
         st.error(f"Error exporting chat history: {str(e)}")
 
+file_path="csv_logo.jpeg"
+
+
 # Sidebar
 with st.sidebar:
-    st.image("C:/Users/vsnee/Documents/coding/GenAI/Chatwithcsv_openai/chatwithcsv_v1/csv_logo.jpeg", caption="Data Analysis Assistant",width=250)
+    st.image(file_path, caption="Data Analysis Assistant",width=250)
 
     st.markdown("### About")
     st.markdown("""
